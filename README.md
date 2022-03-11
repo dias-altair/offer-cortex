@@ -7,8 +7,10 @@ Atualmente a instalação e execução do agente somente pode ser realizada util
 Para a instalação e execução do agente, os seguintes pré-requisitos devem ser atendidos:
 
  - Docker instalado
- - Sistema Operacional Linux ou Windows
+ - Sistema Operacional Linux ou Windows 
  - Acesso a Internet
+
+> **Obs:** No windows não execute os comandos no CMD, pois não irá funcionar. Utilize o Power Shell ou outro CLI compatível.
 
 ## 1 - Criar alias
 
