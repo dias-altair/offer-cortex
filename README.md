@@ -22,8 +22,8 @@ O comando abaixo irá criar um alias no terminal para evitar que diversos comand
     docker container rm offercortex.price || true &&
     docker container rm offercortex.product || true &&
     docker pull diasaltair/offercortex.worker:latest &&
-    docker run -d --name offercortex.price --env CONNECTION_MODE=SSH --env SEARCH_MODE=PRICE diasaltair/offercortex.worker &&
-    docker run -d --name offercortex.product --env CONNECTION_MODE=SSH --env SEARCH_MODE=PRODUCT diasaltair/offercortex.worker &&
+    docker run -d --name offercortex.price --env ASPNETCORE_ENVIRONMENT=CLUSTER --env SEARCH_MODE=PRICE diasaltair/offercortex.worker &&
+    docker run -d --name offercortex.product --env ASPNETCORE_ENVIRONMENT=CLUSTER --env SEARCH_MODE=PRODUCT diasaltair/offercortex.worker &&
     docker update --restart unless-stopped offercortex.price &&
     docker update --restart unless-stopped offercortex.product"
 
